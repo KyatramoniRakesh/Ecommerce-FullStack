@@ -69,6 +69,7 @@ const getMyCart = async (req, res) => {
     res.status(200).json(
       items,
       subtotal)
+      
   } catch (error) {
     res.status(500).json({ message: error.message })
   }
